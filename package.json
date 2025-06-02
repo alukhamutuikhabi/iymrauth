@@ -4,13 +4,12 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon server/src/server.js",
+    "dev": "nodemon server/index.js",
     "build": "npm --prefix client run build && node server/scripts/gen-key.js",
-    "start": "node server/src/server.js",
+    "start": "node server/index.js",
     "test": "vitest run --coverage"
   },
   "dependencies": {
-    "@node-appwrite/sdk": "^10.0.0",
     "appwrite": "^13.0.2",
     "axios": "^1.6.7",
     "bcryptjs": "^2.4.3",
